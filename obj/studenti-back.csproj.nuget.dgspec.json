@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Develop\\vstudio-workspace\\petr\\students-back\\studenti-back.csproj": {}
+    "D:\\git\\students-back\\studenti-back.csproj": {}
   },
   "projects": {
-    "C:\\Develop\\vstudio-workspace\\petr\\students-back\\studenti-back.csproj": {
+    "D:\\git\\students-back\\studenti-back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Develop\\vstudio-workspace\\petr\\students-back\\studenti-back.csproj",
+        "projectUniqueName": "D:\\git\\students-back\\studenti-back.csproj",
         "projectName": "studenti-back",
-        "projectPath": "C:\\Develop\\vstudio-workspace\\petr\\students-back\\studenti-back.csproj",
-        "packagesPath": "C:\\Users\\blahapet\\.nuget\\packages\\",
-        "outputPath": "C:\\Develop\\vstudio-workspace\\petr\\students-back\\obj\\",
+        "projectPath": "D:\\git\\students-back\\studenti-back.csproj",
+        "packagesPath": "C:\\Users\\petr\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\students-back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\blahapet\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\petr\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -38,6 +38,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[1.3.8, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.1.3, )"
