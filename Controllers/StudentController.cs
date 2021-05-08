@@ -4,19 +4,19 @@ using Microsoft.AspNetCore.Mvc;
 namespace students_back.Controllers
 {
     [Route("api/[controller]/[action]")]
-    public class PredmetController : ControllerBase
+    public class StudentController : ControllerBase
     {
-        public PredmetController(AppDb db)
+        public StudentController(AppDb db)
         {
             Db = db;
         }
 
         // GET api/predmet
-        [HttpGet("~/getAll")]
+        /*[HttpGet("~/getAll")]
         public async Task<IActionResult> GetAll()
         {
             await Db.Connection.OpenAsync();
-            var query = new PredmetQuery(Db);
+            var query = new StudentQuery(Db);
             var result = await query.FindAllAsync();
             if (result is null)
                 return new NotFoundResult();
@@ -28,7 +28,7 @@ namespace students_back.Controllers
         public async Task<IActionResult> GetOne(int id)
         {
             await Db.Connection.OpenAsync();
-            var query = new PredmetQuery(Db);
+            var query = new StudentQuery(Db);
             var result = await query.FindOneAsync(id);
             if (result is null)
                 return new NotFoundResult();
@@ -37,7 +37,7 @@ namespace students_back.Controllers
 
         // POST api/predmet
         [HttpPost]
-        public async Task<IActionResult> Predmet([FromBody]Predmet body)
+        public async Task<IActionResult> Student([FromBody]Student body)
         {
             await Db.Connection.OpenAsync();
             body.Db = Db;
@@ -47,10 +47,10 @@ namespace students_back.Controllers
 
         // PUT api/predmet/5
         [HttpPut]
-        public async Task<IActionResult> PutOne([FromBody]Predmet body)
+        public async Task<IActionResult> PutOne([FromBody]Student body)
         {
             await Db.Connection.OpenAsync();
-            var query = new PredmetQuery(Db);
+            var query = new StudentQuery(Db);
             var result = await query.FindOneAsync(body.id);
             if (result is null)
                 return new NotFoundResult();
@@ -64,7 +64,7 @@ namespace students_back.Controllers
         public async Task<IActionResult> DeleteOne(int id)
         {
             await Db.Connection.OpenAsync();
-            var query = new PredmetQuery(Db);
+            var query = new StudentQuery(Db);
             var result = await query.FindOneAsync(id);
             if (result is null)
                 return new NotFoundResult();
@@ -77,10 +77,10 @@ namespace students_back.Controllers
         public async Task<IActionResult> DeleteAll()
         {
             await Db.Connection.OpenAsync();
-            var query = new PredmetQuery(Db);
+            var query = new StudentQuery(Db);
             await query.DeleteAllAsync();
             return new OkResult();
-        }
+        }*/
 
         public AppDb Db { get; }
     }
